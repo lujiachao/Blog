@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.15" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.18.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlog.Model\MyBlog.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MyDapper">
+      <HintPath>..\Package\MyDapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
